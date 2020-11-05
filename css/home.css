@@ -7,41 +7,27 @@ body {
     flex-direction: column;
     height: 100%;
 }
+
 .banniere {
     width: 100%;
     background-color: #188687;
     display: grid;
-    grid-template-rows: repeat(2, auto);
-    row-gap: 20px;
-}
-
-.banniere_top {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(3, auto);
 }
 
 .titre {
     color : white;
     font-size : 60px;
+    font-family: sans-serif;
+    margin-top: 15px;
 }
 
 .logo {
     height : 80px;
     width : 80px;
-}
-
-.menu {
-    width: 100%;
-    display : grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 100px;
-    justify-content: center;
-}
-
-a {
-    text-decoration :none;
-    color : white;
-    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .home_img {
@@ -49,13 +35,63 @@ a {
 }
 
 .photo {
+    margin-top: 25px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
 }
 
 .text {
     width: 100%;
     background-color: #188687;
     flex-grow : 1;
+    font-family: sans-serif;
+    color : white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    float: left;
+}
+
+.menu {
+    margin-top: 35px;
+}
+
+a {
+    margin-right: 15px;
+    text-decoration :none;
+    font-family: sans-serif;
+    color : white;
+    font-size: 25px;
+}
+
+ul li ul {
+    display:none;
+}
+
+ul li ul a {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+li:hover ul li {
+    float: none;
+}
+
+li ul {
+    position: absolute;
 }
